@@ -16,24 +16,51 @@
 !pip install joblib
 !pip install pandas
 !pip install numpy
-!pip install qrcode[pil]```
-⚙️ התאמת סביבת העבודה להרצה – קונפיגורציה
+!pip install qrcode[pil]
+```
+
+---
+
+## ⚙️ התאמת סביבת העבודה להרצה – קונפיגורציה
+
 לפני השימוש במערכת, יש לבצע את ההכנות הבאות:
 
-העלאת כל קבצי המערכת ל-Colab, כולל:
+### 1. העלאת קבצי המערכת
 
-קובץ המודל movie_success_model.joblib
+מכיוון ש־GitHub לא תומך בקבצים מעל 25MB, יש להוריד את הקבצים הבאים מ־Google Drive ולהעלות אותם ל־Colab:
 
-קובץ הנתונים adi_halel1.csv
+- 📄 [לחצי כאן להורדת קובץ הנתונים (adi_halel1.csv)](https://drive.google.com/file/d/1zfkW52oCCVC8TuC51i695-cz-CWPZctJ/view?usp=sharing)
+- 🧠 [לחצי כאן להורדת המודל המאומן (movie_success_model.joblib)](https://drive.google.com/file/d/1fFErmme9JxUnoFeT1V4hNMOlpPOPB7Of/view?usp=sharing)
 
-קבצי המקודדים *.pkl (לשחקנים, שפות, ז'אנרים, במאים וכו')
+כמו כן, יש להעלות את כל קבצי המקודדים בפורמט `.pkl`.
 
-יצירת תיקיות דרושות:
-```!mkdir -p templates
-!mkdir -p models```
-הגדרת טוקן של Ngrok לצורך הפעלת השרת:
-```from pyngrok import ngrok
-ngrok.set_auth_token("2v0a9ia4ml7K2VFmRpaY8UJ9kJ2_7zXk9LvhX2jdRFLgrV9q2")```
-לאחר הרצת הקוד, תתקבל כתובת Ngrok זמנית – זו הכתובת של האתר שלך.
-בנוסף יווצר קובץ QR בתוך האתר המוביל לאותה כתובת,  בשביל ניידים וכדומה.
-📌 הערה: הממשק אינו פעיל תמיד – בכל פתיחה מחדש של המחברת יש להעלות את הקבצים ולהריץ שוב את הקוד.
+---
+
+### 2. יצירת תיקיות דרושות
+
+```python
+!mkdir -p templates
+!mkdir -p models
+```
+
+---
+
+### 3. הגדרת טוקן של Ngrok לצורך הפעלת השרת
+
+```python
+from pyngrok import ngrok
+ngrok.set_auth_token("2v0a9ia4ml7K2VFmRpaY8UJ9kJ2_7zXk9LvhX2jdRFLgrV9q2")
+```
+
+---
+
+### 4. תוצאה לאחר הרצה
+
+לאחר הרצת הקוד, תתקבל כתובת זמנית של Ngrok – זו תהיה הכתובת של האתר שלך.  
+בנוסף, יווצר קובץ QR שיוצג באתר ומאפשר סריקה וגישה נוחה דרך מכשירים ניידים.
+
+---
+
+📌 **הערה:**  
+הממשק אינו פעיל תמיד – בכל פתיחה מחדש של המחברת יש להעלות את הקבצים ולהריץ מחדש את הקוד.
+
