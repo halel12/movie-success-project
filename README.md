@@ -54,7 +54,10 @@ ngrok.set_auth_token("2v0a9ia4ml7K2VFmRpaY8UJ9kJ2_7zXk9LvhX2jdRFLgrV9q2")
 
 ---
 ### 4. 📂 קובץ ממשק משתמש
-הקוד המלא של ממשק המשתמש זמין בקובץ [ממשק_UI.ipynb](path/to/ממשק_UI.ipynb).
+הנה קובץ הקוד של ממשק המשתמש:
+
+[ממשק_UI.ipynb](https://github.com/halel12/movie-success-project/blob/c17228378f531d5453d96434ebf5016b69503f8c/%D7%9E%D7%9E%D7%A9%D7%A7_UI.ipynb)
+
 
 ---
 ### 5. תוצאה לאחר הרצה
